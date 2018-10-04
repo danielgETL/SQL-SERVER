@@ -8,25 +8,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE   FUNCTION [dbo].[FN_CALCULA_IDADE] 
---*******************************************************
---* Modulo     	: Relatórios Gerenciais Farmaseg
---* Função  	: CalcularIdade
---* Função     	: Calcula a idade na data atual
---* Criação    	: 12/05/2010
---* Por         : Eliane Alvarenga
---* Consultoria	: 
---* Modificado  : 
---* Por         : 
---* Parametros  : @DataNascimento -> Data de nascimento
---*				  @DataParametro  -> Data no tempo em que se quer saber a idade
---* Uso			: select dbo.CalcularIdade('1980-05-09',getdate()) AS IDADE
---*******************************************************
---select dbo.CalcularIdade('2008-09-09',getdate())
---select dbo.CalcularIdade('2008-09-09','2010-06-02')
-
---
-(
+CREATE   FUNCTION [dbo].[FN_CALCULA_IDADE] (
     @DataNascimento DateTime,
     @DataParametro DateTime
 )

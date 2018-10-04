@@ -70,7 +70,6 @@ IF ISNUMERIC(@CD_DNV) = 1
 	ELSE
 		SET @vValidado = 0
 	
---RETORNO true FORÇADO DEVIDO A NÃO CONFIABILIDADE DA REGRA 16/05/2012
 SET @vValidado = 1
 
 RETURN @vValidado 
